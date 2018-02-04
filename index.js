@@ -6,6 +6,7 @@ var setBackdrop = Game.setBackdrop
 var cursor = Game.cursor
 var key = Game.key
 var print = Game.print
+var sound = Game.sound
 Game.start();
 var play = createSprite("./asseds/未命名.png");
 setBackdrop("./asseds/123.jpg");
