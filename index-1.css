@@ -1,0 +1,16 @@
+body {
+    background-color: lightblue;
+}
+p{
+    font-size:20px;
+}
+table,th,tr{
+    color:rgb(145, 186, 187);
+    font-size:30px;
+    border:1px solid rgb(19, 4, 88);
+    background:	#FFFFBB;
+    color: 	#5599FF;
+}
+.io{
+    margin-top: 300px;
+}
