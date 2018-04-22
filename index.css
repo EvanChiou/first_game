@@ -4,4 +4,9 @@ body {
 p{
     font-size:20px;
 }
+canvas{
+    display: block;
+    margin: auto;
+}
+
     
