@@ -1,24 +1,14 @@
-var Game = Engine('stage');
-for (var GameAttr in Game) {
-    window[GameAttr] = Game[GameAttr]
-}
-
-Game.set({
-    width: 640, // Default: 640px
-    height: 480, // Default: 480px
-    debugMode: true // Default: false
-});
-
-Game.preload([
-], function () {
-    Game.start();
-});
 var level = 0;
 var sprites = [];
 
 
 function level_1() {
-    var play = createSprite("未命.png");
+    var play = createSprite({
+        x: 320,
+        y: 240,
+        scale: 0.8, // 1.2倍大
+        costumes: ["未命.png"]
+    });
     setBackdrop("13.jpg");
     var stair = 0
     var Ra = createSprite("1371648876-640563658.png");
@@ -675,6 +665,7 @@ function level_3() {
             bed = 1
         }
         if (Seth.costumeId == 0 && Shu.costumeId == 1 && Osiris.costumeId == 1 && Isis.costumeId == 1 && and == 0) {
+            and = 1
             way2.destroy()
             D.destroy()
             pot_jj.destroy()
@@ -718,14 +709,9 @@ function level_3() {
             cou.destroy()
             tt.destroy()
             way1.destroy()
-            and = 1
-            r.costumeId = 21
-            r.animate([22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36], 8, function () {
-                alert("還挺強的嘛!竟然過到這，不過還沒結束，接下來的關卡只要一答錯，就要重新開始呦!   :)")
-                r.destroy()
-                elig.destroy()
-                next_level()
-            });
+            elig.destroy()
+            r.hidden = true
+            next_level()
         }
     });
     when("click", function () {
@@ -1869,9 +1855,6 @@ function level_3() {
             Isis_jj.hidden = false
         }
     });
-    // |||||||||||||||||||||
-    o12 = 1
-    // ||||||||||||||||||||||||
     r.when("click", function () {
         if (r.costumeId == 16 && ppw == 1) {
             D.hidden = false
@@ -2143,8 +2126,30 @@ function level_4() {
             if (Osiris.touched(cursor)) {
                 sound.play("OOO.mp3")
                 stairs++
+                next_level();
             }
         }
+    });
+}
+function level_5() {
+    var r = createSprite({
+        x: 320,
+        y: 280,
+        scale: 0.35, // 1.2倍大
+        costumes: ["r1-1-1.png", "r-2.png", "r3-1.png", "壁.png", "牆壁.png", "火爐大圖.png"
+            , "書(開).png", "寶箱底圖-1.png", "5.png", "陶罐底圖-1.png", "陶罐_斧頭-1.png "
+            , "陶罐_斧頭-2.png", " 陶罐_斧頭-3.png", "陶罐_斧頭-4.png", "陶罐_斧頭-5.png"
+            , "陶罐_斧頭-6.png", "eye1透明路線.png", "eye3-黃色路線2.png", "r2-1(有火把)-1光束.png",
+            "數-格.jpg", "寶箱底圖.png", "閉門.png", " 閉門-1.png", " 開門1-1.png", " 開門1-2.png",
+            "開門1-3.png", "開門2.png", " 開門3.png", " 開門4.png", " 開門5.png", " 開門6.png",
+            "開門7.png", "開門8.png", " 開門9.png", "開門10.png", " 開門11.png", " 開門12.png",
+            "開門13.png", " 開門14.png", " 開門15.png", " 開門16.png"]
+    });
+    r.hidden = false
+    setBackdrop("white");
+    r.costumeId = 21
+    r.animate([22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36], 8, function () {
+        alert("還挺強的嘛!竟然過到這:)!棒!")
     });
 }
 
@@ -2157,5 +2162,6 @@ function next_level() {
     if (level == 2) level_2();
     if (level == 3) level_3();
     if (level == 4) level_4();
+    if (level == 5) level_5();
 }
 next_level()
