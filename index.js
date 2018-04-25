@@ -1,3 +1,18 @@
+-var Game = Engine('stage');
+-for (var GameAttr in Game) {
+-    window[GameAttr] = Game[GameAttr]
+-}
+-
+-Game.set({
+-    width: 640, // Default: 640px
+-    height: 480, // Default: 480px
+-    debugMode: true // Default: false
+-});
+-
+-Game.preload([
+-], function () {
+-    Game.start();
+-});
 var level = 0;
 var sprites = [];
 
