@@ -2166,6 +2166,7 @@ function level_5() {
     r.costumeId = 21
     r.animate([22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36], 8, function () {
         alert("還挺強的嘛!竟然過到這:)!棒!")
+        print("You Win",280,200,45,"black")
     });
 }
 
