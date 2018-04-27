@@ -1890,7 +1890,7 @@ function level_3() {
                 pot_jj.y = 345
                 pot_jj.x = 521
                 r.scale = 0.5
-                alert("請使用游標把祿寶石送入眼球部位你就能得到生命十字(PS:不能碰到黑線")
+                alert("請使用游標把綠寶石送入眼球部位你就能得到生命之符(PS:不能碰到黑線")
                 oWo = 1
             }, 3000);
         }
@@ -2094,21 +2094,11 @@ function level_4() {
             print("伊西絲:舒說的是真話", 100, 150, "white", 30)
         }
         if (stairs == 4) {
-            print("這個送給你，裡面有金幣喔", 50, 10, "white", 45)
             Isis.destroy()
             Shu.destroy()
-            Osiris.y = 200
-            Osiris.scale = 0.9
-            jjk.hidden = false
-            jjk.scale = 0.35
-
-        }
-        if (stairs == 5) {
             Osiris.destroy()
             jjk.destroy()
-
         }
-
     });
     when("click", function () {
         if (stairs == 1) {
@@ -2130,21 +2120,12 @@ function level_4() {
         } else if (stairs == 3) {
             if (Osiris.touched(cursor)) {
                 sound.play("OOO.mp3")
-                stairs = 4
+                next_level();
             };
             if (Shu.touched(cursor) || Isis.touched(cursor)) {
                 sound.play("XXX.mp3")
             }
-        } else if (stairs == 4) {
-            if (jjk.touched(cursor)) {
-                sound.play("OOO.mp3")
-            }
-            if (Osiris.touched(cursor)) {
-                sound.play("OOO.mp3")
-                stairs++
-                next_level();
-            }
-        }
+       }
     });
 }
 function level_5() {
@@ -2166,7 +2147,6 @@ function level_5() {
     r.costumeId = 21
     r.animate([22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36], 8, function () {
         alert("還挺強的嘛!竟然過到這:)!棒!")
-        print("You Win",280,200,45,"black")
     });
 }
 
