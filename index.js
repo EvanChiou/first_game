@@ -2104,6 +2104,7 @@ function level_4() {
         if (stairs == 1) {
             if (Osiris.touched(cursor)) {
                 sound.play("OOO.mp3")
+                next_level();
                 stairs = 4
             };
             if (Shu.touched(cursor) || Isis.touched(cursor)) {
@@ -2112,6 +2113,7 @@ function level_4() {
         } else if (stairs == 2) {
             if (Isis.touched(cursor)) {
                 sound.play("OOO.mp3")
+                next_level();
                 stairs = 4
             };
             if (Shu.touched(cursor) || Osiris.touched(cursor)) {
@@ -2121,6 +2123,7 @@ function level_4() {
             if (Osiris.touched(cursor)) {
                 sound.play("OOO.mp3")
                 next_level();
+                stairs = 4
             };
             if (Shu.touched(cursor) || Isis.touched(cursor)) {
                 sound.play("XXX.mp3")
