@@ -20,10 +20,10 @@ var sprites = [];
 
 function level_1() {
     var play = createSprite({
-        x: 270,
-        y: 300,
+        x: 280,
+        y: 250,
         scale: 0.8, // 1.2倍大
-        costumes: ["未命.png"]
+        costumes: ["首頁.png"]
     });
     setBackdrop("13.jpg");
     var stair = 0
