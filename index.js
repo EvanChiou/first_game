@@ -2025,7 +2025,7 @@ function level_3() {
 
 function level_4() {
     alert("點擊說謊的神像，答對後你就能逃出密室，若點錯...你將永遠被困在密室")
-    setBackdrop("88.jpg");
+    setBackdrop("13.jpg");
     var Shu = createSprite("321.png");
     Shu.x = 100
     Shu.y = 370
