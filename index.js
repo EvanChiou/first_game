@@ -2090,6 +2090,7 @@ function level_4() {
             };
             if (Shu.touched(cursor) || Isis.touched(cursor)) {
                 sound.play("XXX.mp3")
+                stop();
             };
         } else if (stairs == 2) {
             if (Isis.touched(cursor)) {
@@ -2099,6 +2100,7 @@ function level_4() {
             };
             if (Shu.touched(cursor) || Osiris.touched(cursor)) {
                 sound.play("XXX.mp3")
+                stop();
             };
         } else if (stairs == 3) {
             if (Osiris.touched(cursor)) {
@@ -2108,6 +2110,7 @@ function level_4() {
             };
             if (Shu.touched(cursor) || Isis.touched(cursor)) {
                 sound.play("XXX.mp3")
+                stop();
             }
        }
     });
