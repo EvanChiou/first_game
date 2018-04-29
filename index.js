@@ -21,11 +21,11 @@ var sprites = [];
 function level_1() {
     var play = createSprite({
         x: 320,
-        y: 240,
+        y: 20,
         scale: 0.8, // 1.2倍大
         costumes: ["未命.png"]
     });
-    setBackdrop("13.jpg");
+    setBackdrop("88.jpg");
     var stair = 0
     var Ra = createSprite("1371648876-640563658.png");
     Ra.x = 70
