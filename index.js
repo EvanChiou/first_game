@@ -61,9 +61,6 @@ function level_1() {
             alert("恭喜過關!!")
             next_level()
         }
-        if (stair != 0 && stair != 6) {
-            var 關卡 = print("第" + stair + "題", 220, 10, "white", 60)
-        }
         if (stair == 1) {
             print("俄西里斯是冥王，卻同時是豐饒與繁殖之神。", 25, 120, "white", 30)
         };
