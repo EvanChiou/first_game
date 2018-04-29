@@ -173,7 +173,7 @@ function level_2() {
         hidden: true
     });
     var stair = 0;
-    sprites = [dd, jj, q1, q2, q3, q4, q5, q6]
+    sprites = [q1, q2, q3, q4, q5, q6]
     forever(function () {
         if (level != 2) {
             return
