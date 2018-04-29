@@ -21,7 +21,7 @@ var sprites = [];
 function level_1() {
     var play = createSprite({
         x: 320,
-        y: 20,
+        y: 200,
         scale: 0.8, // 1.2倍大
         costumes: ["未命.png"]
     });
