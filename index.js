@@ -20,12 +20,12 @@ var sprites = [];
 
 function level_1() {
     var play = createSprite({
-        x: 320,
-        y: 200,
+        x: 270,
+        y: 300,
         scale: 0.8, // 1.2倍大
         costumes: ["未命.png"]
     });
-    setBackdrop("88.jpg");
+    setBackdrop("13.jpg");
     var stair = 0
     var Ra = createSprite("1371648876-640563658.png");
     Ra.x = 70
@@ -80,6 +80,7 @@ function level_1() {
     });
     when("click", function () {
         if (stair == 0) {
+            setBackdrop("88.jpg");
             play.destroy()
             Ra.hidden = false
             Shu.hidden = false
