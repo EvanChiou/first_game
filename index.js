@@ -72,10 +72,10 @@ function level_1() {
             print("是埃及所有神祇的源頭。", 25, 130, "white", 30)
         };
         if (stair == 4) {
-            print("伊西絲是生命與健康女神。", 25, 100, "white", 30)
+            print("伊西絲是生命與健康女神。", 25, 120, "white", 30)
         }
         if (stair == 5) {
-            print("舒是風神和空氣之神，也是拉Ra的兒子。", 25, 100, "white", 30)
+            print("舒是風神和空氣之神，也是拉Ra的兒子。", 25, 120, "white", 30)
         };
     });
     when("click", function () {
