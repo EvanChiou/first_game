@@ -196,13 +196,16 @@ function level_2() {
         }
         if (text_1 == 1 && text_2 == 10 && text_3 == 100 && text_4 == 1000 && text_5 == 10000 && text_6 == 100000) {
             playing.hidden = false
+            stair = 2
         }
-        print(text_1, q1.x - 15, q1.y + 35, "white", 45);
-        print(text_2, q2.x - 25, q2.y + 35, "white", 45);
-        print(text_3, q3.x - 40, q3.y + 35, "white", 45);
-        print(text_4, q4.x - 50, q4.y + 35, "white", 45);
-        print(text_5, q5.x - 60, q5.y + 35, "white", 45);
-        print(text_6, q6.x - 70, q6.y + 35, "white", 45);
+        if(stair == 1){
+            print(text_1, q1.x - 15, q1.y + 35, "white", 45);
+            print(text_2, q2.x - 25, q2.y + 35, "white", 45);
+            print(text_3, q3.x - 40, q3.y + 35, "white", 45);
+            print(text_4, q4.x - 50, q4.y + 35, "white", 45);
+            print(text_5, q5.x - 60, q5.y + 35, "white", 45);
+            print(text_6, q6.x - 70, q6.y + 35, "white", 45);
+        }
     });
     when("click", function () {
         if(level == 3){
