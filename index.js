@@ -138,6 +138,12 @@ function level_2() {
     var text_4 = '';
     var text_5 = '';
     var text_6 = '';
+    var playing = createSprite({
+        x: 320,
+        y: 250,
+        scale: 0.8,
+        costumes: ["2~3.png"]
+    })
     var q1 = createSprite({
         x: 200,
         y: 100,
@@ -180,16 +186,15 @@ function level_2() {
         costumes: ["100000.png"],
         hidden: true
     });
+    playing.hidden = true
     var stair = 0;
-    sprites = [q1, q2, q3, q4, q5, q6]
+    sprites = [playing, q1, q2, q3, q4, q5, q6]
     forever(function () {
         if (level != 2) {
             return
         }
         if (text_1 == 1 && text_2 == 10 && text_3 == 100 && text_4 == 1000 && text_5 == 10000 && text_6 == 100000) {
-            alert("恭喜過關!!")
-            setBackdrop("white")
-            next_level();
+            playing.hidden = false
         }
         print(text_1, q1.x - 15, q1.y + 35, "white", 45);
         print(text_2, q2.x - 25, q2.y + 35, "white", 45);
@@ -198,7 +203,12 @@ function level_2() {
         print(text_5, q5.x - 60, q5.y + 35, "white", 45);
         print(text_6, q6.x - 70, q6.y + 35, "white", 45);
     });
-
+    when("click", function () {
+        if (text_1 == 1 && text_2 == 10 && text_3 == 100 && text_4 == 1000 && text_5 == 10000 && text_6 == 100000) {
+            setBackdrop("white")
+            next_level()
+        }
+    })
     when("click", function () {
         if (stair == 1) {
             return
