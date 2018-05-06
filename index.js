@@ -25,12 +25,6 @@ function level_1() {
         scale: 0.8, // 1.2倍大
         costumes: ["首頁.png"]
     });
-    var playing = createSprite({
-        x: 320,
-        y: 250,
-        scale: 0.8,
-        costumes: ["1~2.png"]
-    })
     setBackdrop("13.jpg");
     var stair = 0
     var Ra = createSprite("1371648876-640563658.png");
@@ -54,7 +48,6 @@ function level_1() {
     Seth.y = 370
     Seth.hidden = true
     stair = 0
-    playing.hidden = true
 
 
     sprites = [play, Ra, Shu, Osiris, Isis, Seth];
@@ -65,8 +58,8 @@ function level_1() {
             return
         }
         if (stair == 6) {
-            playing.hidden = false
-            setBackdrop("13.jpg")
+            alert("恭喜過關!!")
+            next_level()
         }
         if (stair == 1) {
             print("俄西里斯是冥王，卻同時是豐饒與繁殖之神。", 25, 120, "white", 30)
@@ -96,9 +89,7 @@ function level_1() {
             Seth.hidden = false
             stair = 1
         }
-        if(stair == 6) {
-            next_level()
-        }
+
     });
     function check(ss, s) {
         if (stair == s) {
