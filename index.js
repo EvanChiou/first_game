@@ -142,7 +142,8 @@ function level_2() {
         x: 320,
         y: 250,
         scale: 0.8,
-        costumes: ["2~3.png"]
+        costumes: ["2~3.png"],
+        layer: 1000000
     })
     var q1 = createSprite({
         x: 200,
@@ -204,6 +205,9 @@ function level_2() {
         print(text_6, q6.x - 70, q6.y + 35, "white", 45);
     });
     when("click", function () {
+        if(level == 3){
+            return
+        }
         if (text_1 == 1 && text_2 == 10 && text_3 == 100 && text_4 == 1000 && text_5 == 10000 && text_6 == 100000) {
             setBackdrop("white")
             next_level()
