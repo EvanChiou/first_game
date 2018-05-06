@@ -194,6 +194,13 @@ function level_2() {
         if (level != 2) {
             return
         }
+        if(key.space){
+            text_1 = 1
+            text_2 = 10
+            text_3 = 100
+            text_4 = 1000
+            text_5 == 10000 && text_6 == 100000
+        }
         if (text_1 == 1 && text_2 == 10 && text_3 == 100 && text_4 == 1000 && text_5 == 10000 && text_6 == 100000) {
             playing.hidden = false
             stair = 2
@@ -294,7 +301,6 @@ function level_2() {
 }
 
 function level_3() {
-    alert("箭頭切換房間，並蒐集所需的物品(各神像的法器)，來逃出密室。")
     var lllooolll = 0
     var lllooolll2 = 0
     var and = 0
