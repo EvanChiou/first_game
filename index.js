@@ -57,7 +57,7 @@ function level_1() {
     playing.hidden = true
 
 
-    sprites = [play, Ra, Shu, Osiris, Isis, Seth];
+    sprites = [playing, play, Ra, Shu, Osiris, Isis, Seth];
 
 
     forever(function () {
