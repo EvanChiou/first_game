@@ -194,13 +194,6 @@ function level_2() {
         if (level != 2) {
             return
         }
-        if(key.space){
-            text_1 = 1
-            text_2 = 10
-            text_3 = 100
-            text_4 = 1000
-            text_5 == 10000 && text_6 == 100000
-        }
         if (text_1 == 1 && text_2 == 10 && text_3 == 100 && text_4 == 1000 && text_5 == 10000 && text_6 == 100000) {
             playing.hidden = false
             stair = 2
@@ -301,7 +294,8 @@ function level_2() {
 }
 
 function level_3() {
-var lllooolll = 0
+    alert("箭頭切換房間，並蒐集所需的物品(各神像的法器)，來逃出密室。")
+    var lllooolll = 0
     var lllooolll2 = 0
     var and = 0
     var bed = 0
@@ -608,8 +602,6 @@ var lllooolll = 0
         scale: 0.2, // 1.2倍大
         costumes: ["神像3-器.png", "神像3-器-1.png"]
     });
-    var lolPassed = false;
-    var qqPassed = false;    
     way2.hidden = true
     ppot.hidden = true
     D.hidden = true
@@ -744,23 +736,6 @@ var lllooolll = 0
             elig.destroy()
             r.hidden = true
             next_level()
-        }
-
-        if (lol.costumeId == 3 && lol2.costumeId == 0 && lol3.costumeId == 2 && lol4.costumeId == 1) {
-            lol.destroy()
-            lol2.destroy()
-            lol3.destroy()
-            lol4.destroy()
-            cco.costumeId = 1
-            lol.costumeId = 0
-            lol2.costumeId = 0
-            lol3.costumeId = 0
-            lol4.costumeId = 0
-            cco.x += 20
-            cco.y -= 50
-            Isis_jj.hidden = false
-            Isis_jj.direction += 90
-			lolPassed = true;
         }
     });
     when("click", function () {
@@ -981,15 +956,10 @@ var lllooolll = 0
             } else {
                 Isis_jj.hidden = false
             }
-            /*
             if (QQ2 == 0) {
                 QQ.hidden = true
             } else {
                 QQ.hidden = false
-            }*/
-            if (qqPassed)
-            {
-                QQ.hidden = false;
             }
             if (ii == 0) {
                 pot_jj.hidden = true
@@ -1484,14 +1454,16 @@ var lllooolll = 0
             }
         }
         if (ppe.touched(cursor) && ppe2 == 1 && ppe3 == 0 && ppe4 == 0) {
-            //ppe.costumeId = 1
+            ppe.costumeId = 1
             ppe3 = 1
         } else if (ppe3 == 1 && ppe.touched(cursor) && ppe4 == 0) {
             ppe3 = 0
             ppe.costumeId = 0
         }
-
-		if (ppe3 == 1 && ppe.touched(cursor) && ppe4 == 1) {
+        if (ppe.touched(cursor) && ppe2 == 1 && ppe3 == 0 && ppe4 == 1) {
+            ppe.costumeId = 3
+            ppe3 = 1
+        } else if (ppe3 == 1 && ppe.touched(cursor) && ppe4 == 1) {
             ppe3 = 0
             ppe.costumeId = 2
         }
@@ -1538,7 +1510,22 @@ var lllooolll = 0
             r.costumeId = 5
             r.scale = 0.5
         }
+        if (ppe3 == 1 && ppe2 == 1 && (r.touched(cursor) && r.costumeId == 5)) {
+            ppe.x = 440
+            ppe.y = 300
+            ppe.costumeId = 0
+            ppe.scale = 0.7
+            setTimeout(function () {
+                ppe.costumeId = 2
+                ppe4 = 1
+            }, 1000);
+            setTimeout(function () {
+                ppe.x = 50
+                ppe.y = 50
+                ppe.scale = 0.35
+            }, 2000);
 
+        }
         if (iew.touched(cursor) && ppe2 == 1 && ppe3 == 1 && ppe4 == 1 && ppe5 == 0) {
             ppe.x = 400
             ppe.y = 300
@@ -1551,7 +1538,6 @@ var lllooolll = 0
                 ppe.y = 50
                 ppe.scale = 0.35
                 ppe5++
-                qqPassed = true;
             }, 1000);
         }
         if (QQ.touched(cursor) && r.costumeId == 3) {
@@ -1613,11 +1599,7 @@ var lllooolll = 0
             lol2.hidden = false
             lol3.hidden = false
             lol4.hidden = false
-            /*
             if (Isis_jj2 == 1) {
-                Isis_jj.hidden = false
-            }*/
-            if (lolPassed == true) {  
                 Isis_jj.hidden = false
             }
             if (ppe2 == 0) {
@@ -1635,6 +1617,21 @@ var lllooolll = 0
             } else {
                 pot_jj.hidden = false
             }
+        }
+        if (lol.costumeId == 3 && lol2.costumeId == 0 && lol3.costumeId == 2 && lol4.costumeId == 1) {
+            lol.destroy()
+            lol2.destroy()
+            lol3.destroy()
+            lol4.destroy()
+            cco.costumeId = 1
+            lol.costumeId = 0
+            lol2.costumeId = 0
+            lol3.costumeId = 0
+            lol4.costumeId = 0
+            cco.x += 20
+            cco.y -= 50
+            Isis_jj.hidden = false
+            Isis_jj.direction += 90
         }
         if (mummy.touched(cursor)) {
             mummy_up.x = 320
@@ -2050,47 +2047,6 @@ var lllooolll = 0
         if (and == 0) {
             return
         }
-    });
-
-	// Drag.	
-	function DragPPE() {
-		ppe.x = cursor.x;
-		ppe.y = cursor.y;	
-	}		
-
-    ppe.when("mousedown", function () {
-	    if (ppe2 == 1) {
-
-	        //ppe.costumeId = 3
-	        ppe3 = 1
-
-			document.addEventListener('mousemove', DragPPE);
-
-			ppe.when("mouseup", function () {
-				document.removeEventListener('mousemove', DragPPE);
-				// Drop.
-		        if (r.touched(ppe) && r.costumeId == 5) {    
-					ppe.x = 440
-		            ppe.y = 300
-		            ppe.costumeId = 0
-		            ppe.scale = 0.7
-		            setTimeout(function () {
-		                ppe.costumeId = 2
-		                ppe4 = 1
-		            }, 1000);
-		            setTimeout(function () {
-		                ppe.x = 50
-		                ppe.y = 50
-		                ppe.scale = 0.35
-		            }, 2000);
-		
-		        } else {
-		            ppe.scale = 0.3
-		            ppe.x = 50
-		            ppe.y = 50
-				}
-			});
-		}
     });
 }
 
