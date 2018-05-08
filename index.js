@@ -295,6 +295,8 @@ function level_2() {
 
 function level_3() {
     setBackdrop("white");
+    var lolPassed = false;
+    var qqPassed = false;  
     var lllooolll = 0
     var lllooolll2 = 0
     var and = 0
@@ -1599,7 +1601,11 @@ function level_3() {
             lol2.hidden = false
             lol3.hidden = false
             lol4.hidden = false
+            /*
             if (Isis_jj2 == 1) {
+                Isis_jj.hidden = false
+            }*/
+            if (lolPassed == true) {  
                 Isis_jj.hidden = false
             }
             if (ppe2 == 0) {
@@ -1617,7 +1623,6 @@ function level_3() {
             } else {
                 pot_jj.hidden = false
             }
-        }
         if (lol.costumeId == 3 && lol2.costumeId == 0 && lol3.costumeId == 2 && lol4.costumeId == 1) {
             lol.destroy()
             lol2.destroy()
@@ -1632,6 +1637,7 @@ function level_3() {
             cco.y -= 50
             Isis_jj.hidden = false
             Isis_jj.direction += 90
+			lolPassed = true;
         }
         if (mummy.touched(cursor)) {
             mummy_up.x = 320
