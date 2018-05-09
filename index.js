@@ -11,7 +11,7 @@ Game.set({
 });
 sound.play("1 Hour of Ancient Egyptian Music.mp3", true);
 Game.preload([
-    "第二關.png","未命.png","13.jpg","r3-1.png","陶罐_斧頭-1.png","藥水33.png","100000.png","牆壁.png","壁.png","數-題目.png","數-草紙.png","數-格.jpg","數-卷軸-1.png","數-卷軸.png","暗格2.jpg","暗格1.jpg","開門16.png","開門15.png","開門14.png","開門13.png","開門12.png","開門11.png","開門10.png","開門9.png","開門8.png","開門7.png","開門6.png","開門5.png","開門4.png","開門3.png","開門2.png","開門1-3.png","開門1-2.png","開門1-1.png","象形文字紙捲打開.png","象形文字紙捲.png","畫2.jpg","鳥.png","陶罐底圖-1.png","陶罐_斧頭-6.png","陶罐_斧頭-5.png","陶罐_斧頭-4.png","陶罐_斧頭-3.png","陶罐_斧頭-2.png","陶罐.png","陶器碎片-1.png","閉門-1.png","閉門.png","蛇.png","眼睛.png","密碼.png","素材.png","神像4-器-1.png","神像4-器.png","神像4-無.png","神像4-有.png","神像3-器-1.png","神像3-器.png","神像3-無.png","神像3-有.png","神像2-器-1.png","神像2-器.png","神像2-無.png","神像2-有.png","神像1-器-1.png","神像1-器.png","神像1-無.png","神像1-有.png","書(闔起).png","書(開).png","生命之符-點取位置.png","火爐小圖.png","火爐大圖.png","火把小圖.png","火把2.png","火把.png","木乃伊(開.png","木乃伊(閉).png","十字.png","XX.png","r2-1mummy.png","r2-1(有火把)-1光束.png","r-2.png","r1-1-1.png","eye3-黃色路線2.png","eye1透明路線.png","587925.png","998.png","888.png","887.png","886.png","859.png","10000.png","1000.png","100.png","10.png","1.png","寶箱底圖-1.png","寶箱底圖.png","寶箱小圖101.png","寶箱小圖.png","寶箱大圖打開.png","寶箱大圖1.png","寶箱大圖.png","寶箱大圖(開).png","寶石-斜.png","寶石-正-1.png","寶石-正.png","藥水-1.png","藥水.png","5555.png","189.png","96.png","5858.png","5.png","XXX.mp3","OOO.mp3","123.png","123.gif","XXX.mp3","OOO.mp3","9987.png","777.png","555.png","88.jpg","XXX.mp3","OOO.mp3","1371648876-640563658.png","777.png","753.png","666.gif","555.png","88.png","1 Hour of Ancient Egyptian Music.mp3"
+    "第二關.png", "未命.png", "13.jpg", "r3-1.png", "陶罐_斧頭-1.png", "藥水33.png", "100000.png", "牆壁.png", "壁.png", "數-題目.png", "數-草紙.png", "數-格.jpg", "數-卷軸-1.png", "數-卷軸.png", "暗格2.jpg", "暗格1.jpg", "開門16.png", "開門15.png", "開門14.png", "開門13.png", "開門12.png", "開門11.png", "開門10.png", "開門9.png", "開門8.png", "開門7.png", "開門6.png", "開門5.png", "開門4.png", "開門3.png", "開門2.png", "開門1-3.png", "開門1-2.png", "開門1-1.png", "象形文字紙捲打開.png", "象形文字紙捲.png", "畫2.jpg", "鳥.png", "陶罐底圖-1.png", "陶罐_斧頭-6.png", "陶罐_斧頭-5.png", "陶罐_斧頭-4.png", "陶罐_斧頭-3.png", "陶罐_斧頭-2.png", "陶罐.png", "陶器碎片-1.png", "閉門-1.png", "閉門.png", "蛇.png", "眼睛.png", "密碼.png", "素材.png", "神像4-器-1.png", "神像4-器.png", "神像4-無.png", "神像4-有.png", "神像3-器-1.png", "神像3-器.png", "神像3-無.png", "神像3-有.png", "神像2-器-1.png", "神像2-器.png", "神像2-無.png", "神像2-有.png", "神像1-器-1.png", "神像1-器.png", "神像1-無.png", "神像1-有.png", "書(闔起).png", "書(開).png", "生命之符-點取位置.png", "火爐小圖.png", "火爐大圖.png", "火把小圖.png", "火把2.png", "火把.png", "木乃伊(開.png", "木乃伊(閉).png", "十字.png", "XX.png", "r2-1mummy.png", "r2-1(有火把)-1光束.png", "r-2.png", "r1-1-1.png", "eye3-黃色路線2.png", "eye1透明路線.png", "587925.png", "998.png", "888.png", "887.png", "886.png", "859.png", "10000.png", "1000.png", "100.png", "10.png", "1.png", "寶箱底圖-1.png", "寶箱底圖.png", "寶箱小圖101.png", "寶箱小圖.png", "寶箱大圖打開.png", "寶箱大圖1.png", "寶箱大圖.png", "寶箱大圖(開).png", "寶石-斜.png", "寶石-正-1.png", "寶石-正.png", "藥水-1.png", "藥水.png", "5555.png", "189.png", "96.png", "5858.png", "5.png", "XXX.mp3", "OOO.mp3", "123.png", "123.gif", "XXX.mp3", "OOO.mp3", "9987.png", "777.png", "555.png", "88.jpg", "XXX.mp3", "OOO.mp3", "1371648876-640563658.png", "777.png", "753.png", "666.gif", "555.png", "88.png", "1 Hour of Ancient Egyptian Music.mp3"
 ], function () {
     Game.start();
 });
@@ -97,7 +97,7 @@ function level_1() {
             Seth.hidden = false
             stair = 1
         }
-        if(stair == 6) {
+        if (stair == 6) {
             next_level()
             stair = 7
         }
@@ -131,167 +131,169 @@ function level_1() {
 
 
 function level_2() {
-    setBackdrop("第二關.png");
+    setTimeout(function  (){
+        setBackdrop("第二關.png");
 
-    var text_1 = '';
-    var text_2 = '';
-    var text_3 = '';
-    var text_4 = '';
-    var text_5 = '';
-    var text_6 = '';
-    var playing = createSprite({
-        x: 320,
-        y: 250,
-        scale: 0.8,
-        costumes: ["2~3.png"],
-        layer: 1000000
-    })
-    var q1 = createSprite({
-        x: 200,
-        y: 100,
-        scale: 0.7,
-        costumes: ["1.png"],
-        hidden: true
-    });
-    var q2 = createSprite({
-        x: 200,
-        y: 250,
-        scale: 0.7,
-        costumes: ["10.png"],
-        hidden: true
-    });
-    var q3 = createSprite({
-        x: 200,
-        y: 400,
-        scale: 0.7,
-        costumes: ["100.png"],
-        hidden: true
-    });
-    var q4 = createSprite({
-        x: 450,
-        y: 100,
-        scale: 0.7,
-        costumes: ["1000.png"],
-        hidden: true
-    });
-    var q5 = createSprite({
-        x: 450,
-        y: 250,
-        scale: 0.7,
-        costumes: ["10000.png"],
-        hidden: true
-    });
-    var q6 = createSprite({
-        x: 450,
-        y: 400,
-        scale: 0.7,
-        costumes: ["100000.png"],
-        hidden: true
-    });
-    playing.hidden = true
-    var stair = 0;
-    sprites = [playing, q1, q2, q3, q4, q5, q6]
-    forever(function () {
-        if (level != 2) {
-            return
-        }
-        if (text_1 == 1 && text_2 == 10 && text_3 == 100 && text_4 == 1000 && text_5 == 10000 && text_6 == 100000) {
-            playing.hidden = false
-            stair = 2
-        }
-        if(stair == 1){
-            print(text_1, q1.x - 15, q1.y + 35, "white", 45);
-            print(text_2, q2.x - 25, q2.y + 35, "white", 45);
-            print(text_3, q3.x - 40, q3.y + 35, "white", 45);
-            print(text_4, q4.x - 50, q4.y + 35, "white", 45);
-            print(text_5, q5.x - 60, q5.y + 35, "white", 45);
-            print(text_6, q6.x - 70, q6.y + 35, "white", 45);
-        }
-    });
-    when("click", function () {
-        if(level == 3){
-            return
-        }
-        if (text_1 == 1 && text_2 == 10 && text_3 == 100 && text_4 == 1000 && text_5 == 10000 && text_6 == 100000) {
-            setBackdrop("white")
-            next_level()
-        }
-    })
-    when("click", function () {
-        if (stair == 1) {
-            return
+        var text_1 = '';
+        var text_2 = '';
+        var text_3 = '';
+        var text_4 = '';
+        var text_5 = '';
+        var text_6 = '';
+        var playing = createSprite({
+            x: 320,
+            y: 250,
+            scale: 0.8,
+            costumes: ["2~3.png"],
+            layer: 1000000
+        })
+        var q1 = createSprite({
+            x: 200,
+            y: 100,
+            scale: 0.7,
+            costumes: ["1.png"],
+            hidden: true
+        });
+        var q2 = createSprite({
+            x: 200,
+            y: 250,
+            scale: 0.7,
+            costumes: ["10.png"],
+            hidden: true
+        });
+        var q3 = createSprite({
+            x: 200,
+            y: 400,
+            scale: 0.7,
+            costumes: ["100.png"],
+            hidden: true
+        });
+        var q4 = createSprite({
+            x: 450,
+            y: 100,
+            scale: 0.7,
+            costumes: ["1000.png"],
+            hidden: true
+        });
+        var q5 = createSprite({
+            x: 450,
+            y: 250,
+            scale: 0.7,
+            costumes: ["10000.png"],
+            hidden: true
+        });
+        var q6 = createSprite({
+            x: 450,
+            y: 400,
+            scale: 0.7,
+            costumes: ["100000.png"],
+            hidden: true
+        });
+        playing.hidden = true
+        var stair = 0;
+        sprites = [playing, q1, q2, q3, q4, q5, q6]
+        forever(function () {
+            if (level != 2) {
+                return
+            }
+            if (text_1 == 1 && text_2 == 10 && text_3 == 100 && text_4 == 1000 && text_5 == 10000 && text_6 == 100000) {
+                playing.hidden = false
+                stair = 2
+            }
+            if (stair == 1) {
+                print(text_1, q1.x - 15, q1.y + 35, "white", 45);
+                print(text_2, q2.x - 25, q2.y + 35, "white", 45);
+                print(text_3, q3.x - 40, q3.y + 35, "white", 45);
+                print(text_4, q4.x - 50, q4.y + 35, "white", 45);
+                print(text_5, q5.x - 60, q5.y + 35, "white", 45);
+                print(text_6, q6.x - 70, q6.y + 35, "white", 45);
+            }
+        });
+        when("click", function () {
+            if (level == 3) {
+                return
+            }
+            if (text_1 == 1 && text_2 == 10 && text_3 == 100 && text_4 == 1000 && text_5 == 10000 && text_6 == 100000) {
+                setBackdrop("white")
+                next_level()
+            }
+        })
+        when("click", function () {
+            if (stair == 1) {
+                return
 
-        }
-        setBackdrop("#D9B06A");
-        stair++
-        q1.hidden = false;
-        q2.hidden = false;
-        q3.hidden = false;
-        q4.hidden = false;
-        q5.hidden = false;
-        q6.hidden = false;
-    });
+            }
+            setBackdrop("#D9B06A");
+            stair++
+            q1.hidden = false;
+            q2.hidden = false;
+            q3.hidden = false;
+            q4.hidden = false;
+            q5.hidden = false;
+            q6.hidden = false;
+        });
 
-    q1.when("click", function () {
-        var answer = prompt("請輸入阿拉伯數字");
-        if (answer == 1) {
-            sound.play("OOO.mp3");
-            text_1 = "1";
-        } else {
-            sound.play("XXX.mp3");
-            text_1 = "";
-        }
-    });
-    q2.when("click", function () {
-        var answer = prompt("請輸入阿拉伯數字");
-        if (answer == 10) {
-            sound.play("OOO.mp3");
-            text_2 = "10";
-        } else {
-            sound.play("XXX.mp3");
-            text_2 = "";
-        }
-    });
-    q3.when("click", function () {
-        var answer = prompt("請輸入阿拉伯數字");
-        if (answer == 100) {
-            sound.play("OOO.mp3");
-            text_3 = "100";
-        } else {
-            sound.play("XXX.mp3");
-            text_3 = "";
-        }
-    });
-    q4.when("click", function () {
-        var answer = prompt("請輸入阿拉伯數字");
-        if (answer == 1000) {
-            sound.play("OOO.mp3");
-            text_4 = "1000";
-        } else {
-            sound.play("XXX.mp3");
-            text_4 = "";
-        }
-    });
-    q5.when("click", function () {
-        var answer = prompt("請輸入阿拉伯數字");
-        if (answer == 10000) {
-            sound.play("OOO.mp3");
-            text_5 = "10000";
-        } else {
-            sound.play("XXX.mp3");
-            text_5 = "";
-        }
-    });
-    q6.when("click", function () {
-        var answer = prompt("請輸入阿拉伯數字");
-        if (answer == 100000) {
-            sound.play("OOO.mp3");
-            text_6 = "100000";
-        } else {
-            sound.play("XXX.mp3");
-            text_6 = "";
-        }
-    });
+        q1.when("click", function () {
+            var answer = prompt("請輸入阿拉伯數字");
+            if (answer == 1) {
+                sound.play("OOO.mp3");
+                text_1 = "1";
+            } else {
+                sound.play("XXX.mp3");
+                text_1 = "";
+            }
+        });
+        q2.when("click", function () {
+            var answer = prompt("請輸入阿拉伯數字");
+            if (answer == 10) {
+                sound.play("OOO.mp3");
+                text_2 = "10";
+            } else {
+                sound.play("XXX.mp3");
+                text_2 = "";
+            }
+        });
+        q3.when("click", function () {
+            var answer = prompt("請輸入阿拉伯數字");
+            if (answer == 100) {
+                sound.play("OOO.mp3");
+                text_3 = "100";
+            } else {
+                sound.play("XXX.mp3");
+                text_3 = "";
+            }
+        });
+        q4.when("click", function () {
+            var answer = prompt("請輸入阿拉伯數字");
+            if (answer == 1000) {
+                sound.play("OOO.mp3");
+                text_4 = "1000";
+            } else {
+                sound.play("XXX.mp3");
+                text_4 = "";
+            }
+        });
+        q5.when("click", function () {
+            var answer = prompt("請輸入阿拉伯數字");
+            if (answer == 10000) {
+                sound.play("OOO.mp3");
+                text_5 = "10000";
+            } else {
+                sound.play("XXX.mp3");
+                text_5 = "";
+            }
+        });
+        q6.when("click", function () {
+            var answer = prompt("請輸入阿拉伯數字");
+            if (answer == 100000) {
+                sound.play("OOO.mp3");
+                text_6 = "100000";
+            } else {
+                sound.play("XXX.mp3");
+                text_6 = "";
+            }
+        });
+    }, 1000)
 }
 function level_3() {
     var lllooolll = 0
@@ -2138,7 +2140,7 @@ function level_4() {
                 sound.play("XXX.mp3")
                 stop();
             }
-       }
+        }
     });
 }
 function level_5() {
