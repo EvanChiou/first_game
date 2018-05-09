@@ -292,7 +292,6 @@ function level_2() {
         }
     });
 }
-
 function level_3() {
     var lllooolll = 0
     var lllooolll2 = 0
