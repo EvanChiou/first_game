@@ -1,3 +1,4 @@
+alert("成功")
 var Game = Engine('stage');
 for (var GameAttr in Game) {
     window[GameAttr] = Game[GameAttr]
@@ -8,9 +9,9 @@ Game.set({
     height: 480, // Default: 480px
     debugMode: true // Default: false
 });
-
+sound.play("1 Hour of Ancient Egyptian Music.mp3", true);
 Game.preload([
-    "第二關.png","未命.png","13.jpg","r3-1.png","陶罐_斧頭-1.png","藥水33.png","100000.png","牆壁.png","壁.png","數-題目.png","數-草紙.png","數-格.jpg","數-卷軸-1.png","數-卷軸.png","暗格2.jpg","暗格1.jpg","開門16.png","開門15.png","開門14.png","開門13.png","開門12.png","開門11.png","開門10.png","開門9.png","開門8.png","開門7.png","開門6.png","開門5.png","開門4.png","開門3.png","開門2.png","開門1-3.png","開門1-2.png","開門1-1.png","象形文字紙捲打開.png","象形文字紙捲.png","畫2.jpg","鳥.png","陶罐底圖-1.png","陶罐_斧頭-6.png","陶罐_斧頭-5.png","陶罐_斧頭-4.png","陶罐_斧頭-3.png","陶罐_斧頭-2.png","陶罐.png","陶器碎片-1.png","閉門-1.png","閉門.png","蛇.png","眼睛.png","密碼.png","素材.png","神像4-器-1.png","神像4-器.png","神像4-無.png","神像4-有.png","神像3-器-1.png","神像3-器.png","神像3-無.png","神像3-有.png","神像2-器-1.png","神像2-器.png","神像2-無.png","神像2-有.png","神像1-器-1.png","神像1-器.png","神像1-無.png","神像1-有.png","書(闔起).png","書(開).png","生命之符-點取位置.png","火爐小圖.png","火爐大圖.png","火把小圖.png","火把2.png","火把.png","木乃伊(開.png","木乃伊(閉).png","十字.png","XX.png","r2-1mummy.png","r2-1(有火把)-1光束.png","r-2.png","r1-1-1.png","eye3-黃色路線2.png","eye1透明路線.png","587925.png","998.png","888.png","887.png","886.png","859.png","10000.png","1000.png","100.png","10.png","1.png","寶箱底圖-1.png","寶箱底圖.png","寶箱小圖101.png","寶箱小圖.png","寶箱大圖打開.png","寶箱大圖1.png","寶箱大圖.png","寶箱大圖(開).png","寶石-斜.png","寶石-正-1.png","寶石-正.png","藥水-1.png","藥水.png","5555.png","189.png","96.png","5858.png","5.png","XXX.mp3","OOO.mp3","123.png","123.gif","XXX.mp3","OOO.mp3","9987.png","777.png","555.png","88.jpg","XXX.mp3","OOO.mp3","1371648876-640563658.png","777.png","753.png","666.gif","555.png","88.png"
+    "第二關.png","未命.png","13.jpg","r3-1.png","陶罐_斧頭-1.png","藥水33.png","100000.png","牆壁.png","壁.png","數-題目.png","數-草紙.png","數-格.jpg","數-卷軸-1.png","數-卷軸.png","暗格2.jpg","暗格1.jpg","開門16.png","開門15.png","開門14.png","開門13.png","開門12.png","開門11.png","開門10.png","開門9.png","開門8.png","開門7.png","開門6.png","開門5.png","開門4.png","開門3.png","開門2.png","開門1-3.png","開門1-2.png","開門1-1.png","象形文字紙捲打開.png","象形文字紙捲.png","畫2.jpg","鳥.png","陶罐底圖-1.png","陶罐_斧頭-6.png","陶罐_斧頭-5.png","陶罐_斧頭-4.png","陶罐_斧頭-3.png","陶罐_斧頭-2.png","陶罐.png","陶器碎片-1.png","閉門-1.png","閉門.png","蛇.png","眼睛.png","密碼.png","素材.png","神像4-器-1.png","神像4-器.png","神像4-無.png","神像4-有.png","神像3-器-1.png","神像3-器.png","神像3-無.png","神像3-有.png","神像2-器-1.png","神像2-器.png","神像2-無.png","神像2-有.png","神像1-器-1.png","神像1-器.png","神像1-無.png","神像1-有.png","書(闔起).png","書(開).png","生命之符-點取位置.png","火爐小圖.png","火爐大圖.png","火把小圖.png","火把2.png","火把.png","木乃伊(開.png","木乃伊(閉).png","十字.png","XX.png","r2-1mummy.png","r2-1(有火把)-1光束.png","r-2.png","r1-1-1.png","eye3-黃色路線2.png","eye1透明路線.png","587925.png","998.png","888.png","887.png","886.png","859.png","10000.png","1000.png","100.png","10.png","1.png","寶箱底圖-1.png","寶箱底圖.png","寶箱小圖101.png","寶箱小圖.png","寶箱大圖打開.png","寶箱大圖1.png","寶箱大圖.png","寶箱大圖(開).png","寶石-斜.png","寶石-正-1.png","寶石-正.png","藥水-1.png","藥水.png","5555.png","189.png","96.png","5858.png","5.png","XXX.mp3","OOO.mp3","123.png","123.gif","XXX.mp3","OOO.mp3","9987.png","777.png","555.png","88.jpg","XXX.mp3","OOO.mp3","1371648876-640563658.png","777.png","753.png","666.gif","555.png","88.png","1 Hour of Ancient Egyptian Music.mp3"
 ], function () {
     Game.start();
 });
@@ -25,6 +26,12 @@ function level_1() {
         scale: 0.8, // 1.2倍大
         costumes: ["首頁.png"]
     });
+    var playing = createSprite({
+        x: 320,
+        y: 250,
+        scale: 0.8,
+        costumes: ["1~2.png"]
+    })
     setBackdrop("13.jpg");
     var stair = 0
     var Ra = createSprite("1371648876-640563658.png");
@@ -48,9 +55,10 @@ function level_1() {
     Seth.y = 370
     Seth.hidden = true
     stair = 0
+    playing.hidden = true
 
 
-    sprites = [play, Ra, Shu, Osiris, Isis, Seth];
+    sprites = [playing, play, Ra, Shu, Osiris, Isis, Seth];
 
 
     forever(function () {
@@ -58,8 +66,8 @@ function level_1() {
             return
         }
         if (stair == 6) {
-            alert("恭喜過關!!")
-            next_level()
+            playing.hidden = false
+            setBackdrop("13.jpg")
         }
         if (stair == 1) {
             print("俄西里斯是冥王，卻同時是豐饒與繁殖之神。", 25, 120, "white", 30)
@@ -72,10 +80,10 @@ function level_1() {
             print("是埃及所有神祇的源頭。", 25, 130, "white", 30)
         };
         if (stair == 4) {
-            print("伊西絲是生命與健康女神。", 25, 100, "white", 30)
+            print("伊西絲是生命與健康女神。", 25, 120, "white", 30)
         }
         if (stair == 5) {
-            print("舒是風神和空氣之神，也是拉Ra的兒子。", 25, 100, "white", 30)
+            print("舒是風神和空氣之神，也是拉Ra的兒子。", 25, 120, "white", 30)
         };
     });
     when("click", function () {
@@ -89,7 +97,10 @@ function level_1() {
             Seth.hidden = false
             stair = 1
         }
-
+        if(stair == 6) {
+            next_level()
+            stair = 7
+        }
     });
     function check(ss, s) {
         if (stair == s) {
@@ -265,9 +276,7 @@ function level_2() {
         }
     });
 }
-
 function level_3() {
-    alert("箭頭切換房間，並蒐集所需的物品(各神像的法器)，來逃出密室。")
     var lllooolll = 0
     var lllooolll2 = 0
     var and = 0
@@ -2090,6 +2099,7 @@ function level_4() {
             };
             if (Shu.touched(cursor) || Isis.touched(cursor)) {
                 sound.play("XXX.mp3")
+                stop();
             };
         } else if (stairs == 2) {
             if (Isis.touched(cursor)) {
@@ -2099,6 +2109,7 @@ function level_4() {
             };
             if (Shu.touched(cursor) || Osiris.touched(cursor)) {
                 sound.play("XXX.mp3")
+                stop();
             };
         } else if (stairs == 3) {
             if (Osiris.touched(cursor)) {
@@ -2108,6 +2119,7 @@ function level_4() {
             };
             if (Shu.touched(cursor) || Isis.touched(cursor)) {
                 sound.play("XXX.mp3")
+                stop();
             }
        }
     });
