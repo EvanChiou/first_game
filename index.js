@@ -294,7 +294,6 @@ function level_2() {
 }
 
 function level_3() {
-    alert("箭頭切換房間，並蒐集所需的物品(各神像的法器)，來逃出密室。")
     var lllooolll = 0
     var lllooolll2 = 0
     var and = 0
