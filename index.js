@@ -1,4 +1,4 @@
-alert("成功 bang bang")
+alert("成功")
 var Game = Engine('stage');
 for (var GameAttr in Game) {
     window[GameAttr] = Game[GameAttr]
@@ -17,8 +17,10 @@ Game.preload([
 });
 var level = 0;
 var sprites = [];
-
-
+var time = 0
+setInterval(function(){
+    time++
+},1000)
 function level_1() {
     var play = createSprite({
         x: 280,
@@ -2167,7 +2169,7 @@ function level_5() {
     setBackdrop("white");
     r.costumeId = 21
     r.animate([22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36], 8, function () {
-        alert("還挺強的嘛!竟然過到這:)!棒!")
+        alert("你總共過了"+time+"秒")
     });
 }
 
