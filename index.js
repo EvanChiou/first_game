@@ -2165,11 +2165,19 @@ function level_5() {
             "開門7.png", "開門8.png", " 開門9.png", "開門10.png", " 開門11.png", " 開門12.png",
             "開門13.png", " 開門14.png", " 開門15.png", " 開門16.png"]
     });
+    var playing = createSprite({
+        x:320,
+        y:250,
+        scale:0.8,
+        costumes:["./end.png"]
+    })
+    playing.hidden = true
     r.hidden = false
     setBackdrop("white");
     r.costumeId = 21
     r.animate([22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36], 8, function () {
-        alert("你總共過了"+time+"秒")
+        playing.hidden = false
+        print(time,320,240,45,"white")
     });
 }
 
