@@ -1,4 +1,4 @@
-alert("成功，靠腰")
+alert("成功，靠腰，北七")
 var Game = Engine('stage');
 for (var GameAttr in Game) {
     window[GameAttr] = Game[GameAttr]
@@ -2183,6 +2183,7 @@ function level_5() {
     forever(function(){
         if(ppap == 1){
             print(time,320,240,60,"white")
+	    stop()
         }
     })
 }
