@@ -298,6 +298,7 @@ function level_2() {
     }, 1000)
 }
 function level_3() {
+    setBackdrop("white")
     var lllooolll = 0
     var lllooolll2 = 0
     var lolPassed = false;
@@ -2060,6 +2061,7 @@ function level_3() {
 }
 
 function level_4() {
+    setBackdrop("white")
     alert("點擊說謊的神像，答對後你就能逃出密室，若點錯...你將永遠被困在密室")
     setBackdrop("13.jpg");
     var Shu = createSprite("神像4-有.png");
@@ -2152,6 +2154,7 @@ function level_4() {
     });
 }
 function level_5() {
+    setBackdrop("white")
     var r = createSprite({
         x: 320,
         y: 280,
@@ -2182,7 +2185,7 @@ function level_5() {
     });
     forever(function(){
         if(ppap == 1){
-            print(time,320,240,60,"white")
+            print(time,320,240,60,"black")
 	    stop()
         }
     })
