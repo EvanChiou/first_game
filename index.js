@@ -1,4 +1,4 @@
-alert("成功 time")
+alert("成功")
 var Game = Engine('stage');
 for (var GameAttr in Game) {
     window[GameAttr] = Game[GameAttr]
@@ -2169,16 +2169,22 @@ function level_5() {
         x:320,
         y:250,
         scale:0.8,
-        costumes:["./end.png"]
+        costumes:["end.png"]
     })
+    var ppap = 0
     playing.hidden = true
     r.hidden = false
     setBackdrop("white");
     r.costumeId = 21
     r.animate([22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36], 8, function () {
         playing.hidden = false
-        print(time,320,240,45,"white")
+        ppap = 1
     });
+    forever(function(){
+        if(ppap == 1){
+            print(time,320,240,60,"white")
+        }
+    })
 }
 
 function next_level() {
