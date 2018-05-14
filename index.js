@@ -2135,7 +2135,7 @@ function level_4() {
                 sound.play("OOO.mp3")
                 next_level();
                 stairs = 4
-		    alert("fdfd")
+		alert("fdfd")
             };
             if (Shu.touched(cursor) || Osiris.touched(cursor)) {
                 sound.play("XXX.mp3")
@@ -2152,6 +2152,7 @@ function level_4() {
 //                 stop();
 //             }
 //         }
+	}	
     });
 }
 function level_5() {
