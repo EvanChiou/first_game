@@ -2120,7 +2120,7 @@ function level_4() {
         }
     });
     when("click", function () {
-        if (stairs == 1) {
+//         if (stairs == 1) {
 //             if (Osiris.touched(cursor)) {
 //                 sound.play("OOO.mp3")
 //                 next_level();
