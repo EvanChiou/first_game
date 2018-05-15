@@ -1,4 +1,4 @@
-alert("成功2")
+alert("成功")
 var Game = Engine('stage');
 for (var GameAttr in Game) {
     window[GameAttr] = Game[GameAttr]
@@ -2120,39 +2120,37 @@ function level_4() {
         }
     });
     when("click", function () {
-//         if (stairs == 1) {
-//             if (Osiris.touched(cursor)) {
-//                 sound.play("OOO.mp3")
-//                 next_level();
-//                 stairs = 4
-//             };
-//             if (Shu.touched(cursor) || Isis.touched(cursor)) {
-//                 sound.play("XXX.mp3")
-//                 stop();
-//             };
-//         } else if (stairs == 2) {
+        if (stairs == 1) {
+            if (Osiris.touched(cursor)) {
+                sound.play("OOO.mp3")
+                next_level();
+                stairs = 4
+            };
+            if (Shu.touched(cursor) || Isis.touched(cursor)) {
+                sound.play("XXX.mp3")
+                stop();
+            };
+        } else if (stairs == 2) {
             if (Isis.touched(cursor)) {
                 sound.play("OOO.mp3")
                 next_level();
                 stairs = 4
-		alert("fdfd")
             };
             if (Shu.touched(cursor) || Osiris.touched(cursor)) {
                 sound.play("XXX.mp3")
                 stop();
             };
-//         } else if (stairs == 3) {
-//             if (Osiris.touched(cursor)) {
-//                 sound.play("OOO.mp3")
-//                 next_level();
-//                 stairs = 4
-//             };
-//             if (Shu.touched(cursor) || Isis.touched(cursor)) {
-//                 sound.play("XXX.mp3")
-//                 stop();
-//             }
-//         }
-	}	
+        } else if (stairs == 3) {
+            if (Osiris.touched(cursor)) {
+                sound.play("OOO.mp3")
+                next_level();
+                stairs = 4
+            };
+            if (Shu.touched(cursor) || Isis.touched(cursor)) {
+                sound.play("XXX.mp3")
+                stop();
+            }
+        }
     });
 }
 function level_5() {
