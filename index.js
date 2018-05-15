@@ -2086,7 +2086,7 @@ function level_4() {
     Osiris.hidden = true
     Isis.hidden = true
     jjk.hidden = true
-    var stairs = Math.floor(Math.random() * 4)
+    var stairs = Math.floor(Math.random() * 3)
     forever(function () {
         if (stairs == 0) {
             stairs++
@@ -2131,16 +2131,6 @@ function level_4() {
                 stop();
             };
         } else if (stairs == 2) {
-            if (Isis.touched(cursor)) {
-                sound.play("OOO.mp3")
-                next_level();
-                stairs = 4
-            };
-            if (Shu.touched(cursor) || Osiris.touched(cursor)) {
-                sound.play("XXX.mp3")
-                stop();
-            };
-        } else if (stairs == 3) {
             if (Osiris.touched(cursor)) {
                 sound.play("OOO.mp3")
                 next_level();
