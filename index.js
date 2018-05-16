@@ -13,13 +13,14 @@ Game.preload([
 ], function () {
     Game.start();
 });
-sound.play("1 Hour of Ancient Egyptian Music.mp3", true);
+
 var level = 0;
 var sprites = [];
 var time = 0
 setInterval(function(){
     time++
 },1000)
+sound.play("1 Hour of Ancient Egyptian Music.mp3", true);
 function level_1() {
     var play = createSprite({
         x: 280,
