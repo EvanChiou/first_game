@@ -2108,16 +2108,10 @@ function level_4() {
             print("俄西里斯:有人說真話有人說假話", 100, 90, "white", 30)
             print("伊西絲:我們三個當中沒有人說假話", 100, 150, "white", 30)
         }
-        if (stairs == 3) {
-            print("舒:你們倆一個說的真話一個說的假話", 100, 30, "white", 30)
-            print("俄西里斯:舒說的是假話", 100, 90, "white", 30)
-            print("伊西絲:舒說的是真話", 100, 150, "white", 30)
-        }
         if (stairs == 4) {
             Isis.destroy()
             Shu.destroy()
             Osiris.destroy()
-            jjk.destroy()
         }
     });
     when("click", function () {
@@ -2132,12 +2126,12 @@ function level_4() {
                 stop();
             };
         } else if (stairs == 2) {
-            if (Osiris.touched(cursor)) {
+            if (Isis.touched(cursor)) {
                 sound.play("OOO.mp3")
                 next_level();
                 stairs = 4
             };
-            if (Shu.touched(cursor) || Isis.touched(cursor)) {
+            if (Shu.touched(cursor) || Osiris.touched(cursor)) {
                 sound.play("XXX.mp3")
                 stop();
             }
@@ -2150,11 +2144,7 @@ function level_5() {
         x: 320,
         y: 280,
         scale: 0.35, // 1.2倍大
-        costumes: ["r1-1-1.png", "r-2.png", "r3-1.png", "壁.png", "牆壁.png", "火爐大圖.png"
-            , "書(開).png", "寶箱底圖-1.png", "5.png", "陶罐底圖-1.png", "陶罐_斧頭-1.png "
-            , "陶罐_斧頭-2.png", " 陶罐_斧頭-3.png", "陶罐_斧頭-4.png", "陶罐_斧頭-5.png"
-            , "陶罐_斧頭-6.png", "eye1透明路線.png", "eye3-黃色路線2.png", "r2-1(有火把)-1光束.png",
-            "數-格.jpg", "寶箱底圖.png", "閉門.png", " 閉門-1.png", " 開門1-1.png", " 開門1-2.png",
+        costumes: ["閉門.png", " 閉門-1.png", " 開門1-1.png", " 開門1-2.png",
             "開門1-3.png", "開門2.png", " 開門3.png", " 開門4.png", " 開門5.png", " 開門6.png",
             "開門7.png", "開門8.png", " 開門9.png", "開門10.png", " 開門11.png", " 開門12.png",
             "開門13.png", " 開門14.png", " 開門15.png", " 開門16.png"]
