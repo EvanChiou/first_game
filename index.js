@@ -1940,6 +1940,7 @@ function level_3() {
             minecraft.x = 400
             minecraft.direction += 90
             minecraft.hidden = false
+	    minecraft.costumeId = 0
         }
         if (edlp = 1) {
             minecraft.scale = 0.2
@@ -2072,7 +2073,7 @@ function level_4() {
     Osiris.x = 300
     Osiris.y = 370
     Osiris.hidden = true
-    var Isis = createSprite("555.png");
+    var IsisQ = createSprite("555.png");
     Isis.x = 500
     Isis.y = 370
     Isis.hidden = true
@@ -2085,7 +2086,6 @@ function level_4() {
     Shu.hidden = true
     Osiris.hidden = true
     Isis.hidden = true
-    jjk.hidden = true
     var stairs = Math.floor(Math.random() * 4)
     forever(function () {
         if (stairs == 0) {
@@ -2094,9 +2094,6 @@ function level_4() {
         Shu.hidden = false
         Osiris.hidden = false
         Isis.hidden = false
-        if (stairs == 6) {
-            print("YOU WIN!!!", 55, 100, "white", 100)
-        }
         if (stairs == 1) {
             print("舒:伊西絲說的可能是真話或是假話", 100, 30, "white", 30)
             print("俄西里斯:舒說的是假話", 100, 90, "white", 30)
@@ -2116,38 +2113,31 @@ function level_4() {
             Isis.destroy()
             Shu.destroy()
             Osiris.destroy()
-            jjk.destroy()
         }
     });
     when("click", function () {
         if (stairs == 1) {
             if (Osiris.touched(cursor)) {
-                sound.play("OOO.mp3")
                 next_level();
                 stairs = 4
             };
-            if (Shu.touched(cursor) || Isis.touched(cursor)) {
-                sound.play("XXX.mp3")
+            if (Shu.touched(cursor) || IsisQ.touched(cursor)) {
                 stop();
             };
         } else if (stairs == 2) {
-            if (Isis.touched(cursor)) {
-                sound.play("OOO.mp3")
+            if (IsisQ.touched(cursor)) {
                 next_level();
                 stairs = 4
             };
             if (Shu.touched(cursor) || Osiris.touched(cursor)) {
-                sound.play("XXX.mp3")
                 stop();
             };
         } else if (stairs == 3) {
             if (Osiris.touched(cursor)) {
-                sound.play("OOO.mp3")
                 next_level();
                 stairs = 4
             };
-            if (Shu.touched(cursor) || Isis.touched(cursor)) {
-                sound.play("XXX.mp3")
+            if (Shu.touched(cursor) || IsisQ.touched(cursor)) {
                 stop();
             }
         }
