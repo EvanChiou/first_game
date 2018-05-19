@@ -1951,7 +1951,7 @@ function level_3() {
                     minecraft.costumeId = 0
                     ai = 0
                 }
-            })
+            },1000)
         }
     })
     uj.when("click", function () {
