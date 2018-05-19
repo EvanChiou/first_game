@@ -1942,7 +1942,7 @@ function level_3() {
             minecraft.costumeId = 0
         }
         if (edlp = 1) {
-            settimeout(function(){
+            setTimeout(function(){
                 minecraft.scale = 0.2
                 if(minecraft.costumeId == 0) {
                     minecraft.costumeId = 1
@@ -1954,8 +1954,6 @@ function level_3() {
             })
         }
     })
-
-};
 uj.when("click", function () {
     r.costumeId = 19
     way2.hidden = true
