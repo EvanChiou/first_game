@@ -2073,18 +2073,14 @@ function level_4() {
     Osiris.y = 370
     Osiris.hidden = true
     var IsisQ = createSprite("555.png");
-    Isis.x = 500
-    Isis.y = 370
-    Isis.hidden = true
+    IsisQ.x = 500
+    IsisQ.y = 370
     var jjk = createSprite({
         x: 300,
         y: 400,
         scale: 0.4, // 1.2倍大
         costumes: ["9987.png"]
     });
-    Shu.hidden = true
-    Osiris.hidden = true
-    Isis.hidden = true
     var stairs = Math.floor(Math.random() * 4)
     forever(function () {
         if (stairs == 0) {
@@ -2092,7 +2088,7 @@ function level_4() {
         }
         Shu.hidden = false
         Osiris.hidden = false
-        Isis.hidden = false
+        IsisQ.hidden = false
         if (stairs == 1) {
             print("舒:伊西絲說的可能是真話或是假話", 100, 30, "white", 30)
             print("俄西里斯:舒說的是假話", 100, 90, "white", 30)
@@ -2109,7 +2105,7 @@ function level_4() {
             print("伊西絲:舒說的是真話", 100, 150, "white", 30)
         }
         if (stairs == 4) {
-            Isis.destroy()
+            IsisQ.destroy()
             Shu.destroy()
             Osiris.destroy()
         }
