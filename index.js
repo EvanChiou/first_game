@@ -2075,12 +2075,6 @@ function level_4() {
     var IsisQ = createSprite("555.png");
     IsisQ.x = 500
     IsisQ.y = 370
-    var jjk = createSprite({
-        x: 300,
-        y: 400,
-        scale: 0.4, // 1.2倍大
-        costumes: ["9987.png"]
-    });
     var stairs = Math.floor(Math.random() * 4)
     forever(function () {
         if (stairs == 0) {
