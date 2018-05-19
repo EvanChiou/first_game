@@ -1,4 +1,3 @@
-alert("成功")
 var Game = Engine('stage');
 for (var GameAttr in Game) {
     window[GameAttr] = Game[GameAttr]
