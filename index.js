@@ -10,16 +10,16 @@ Game.set({
 });
 sound.play("1 Hour of Ancient Egyptian Music.mp3", true);
 Game.preload([
-    "第二關.png", "未命.png", "13.jpg", "r3-1.png", "陶罐_斧頭-1.png", "藥水33.png", "100000.png", "牆壁.png", "壁.png", "數-題目.png", "數-草紙.png", "數-格.jpg", "數-卷軸-1.png", "數-卷軸.png", "暗格2.jpg", "暗格1.jpg", "開門16.png", "開門15.png", "開門14.png", "開門13.png", "開門12.png", "開門11.png", "開門10.png", "開門9.png", "開門8.png", "開門7.png", "開門6.png", "開門5.png", "開門4.png", "開門3.png", "開門2.png", "開門1-3.png", "開門1-2.png", "開門1-1.png", "象形文字紙捲打開.png", "象形文字紙捲.png", "畫2.jpg", "鳥.png", "陶罐底圖-1.png", "陶罐_斧頭-6.png", "陶罐_斧頭-5.png", "陶罐_斧頭-4.png", "陶罐_斧頭-3.png", "陶罐_斧頭-2.png", "陶罐.png", "陶器碎片-1.png", "閉門-1.png", "閉門.png", "蛇.png", "眼睛.png", "密碼.png", "素材.png", "神像4-器-1.png", "神像4-器.png", "神像4-無.png", "神像4-有.png", "神像3-器-1.png", "神像3-器.png", "神像3-無.png", "神像3-有.png", "神像2-器-1.png", "神像2-器.png", "神像2-無.png", "神像2-有.png", "神像1-器-1.png", "神像1-器.png", "神像1-無.png", "神像1-有.png", "書(闔起).png", "書(開).png", "生命之符-點取位置.png", "火爐小圖.png", "火爐大圖.png", "火把小圖.png", "火把2.png", "火把.png", "木乃伊(開.png", "木乃伊(閉).png", "十字.png", "XX.png", "r2-1mummy.png", "r2-1(有火把)-1光束.png", "r-2.png", "r1-1-1.png", "eye3-黃色路線2.png", "eye1透明路線.png", "587925.png", "998.png", "888.png", "887.png", "886.png", "859.png", "10000.png", "1000.png", "100.png", "10.png", "1.png", "寶箱底圖-1.png", "寶箱底圖.png", "寶箱小圖101.png", "寶箱小圖.png", "寶箱大圖打開.png", "寶箱大圖1.png", "寶箱大圖.png", "寶箱大圖(開).png", "寶石-斜.png", "寶石-正-1.png", "寶石-正.png", "藥水-1.png", "藥水.png", "5555.png", "189.png", "96.png", "5858.png", "5.png", "XXX.mp3", "OOO.mp3", "123.png", "123.gif", "XXX.mp3", "OOO.mp3", "9987.png", "777.png", "555.png", "88.jpg", "XXX.mp3", "OOO.mp3", "1371648876-640563658.png", "777.png", "753.png", "666.gif", "555.png", "88.png", "1 Hour of Ancient Egyptian Music.mp3","end.png"
+    "第二關.png", "未命.png", "13.jpg", "r3-1.png", "陶罐_斧頭-1.png", "藥水33.png", "100000.png", "牆壁.png", "壁.png", "數-題目.png", "數-草紙.png", "數-格.jpg", "數-卷軸-1.png", "數-卷軸.png", "暗格2.jpg", "暗格1.jpg", "開門16.png", "開門15.png", "開門14.png", "開門13.png", "開門12.png", "開門11.png", "開門10.png", "開門9.png", "開門8.png", "開門7.png", "開門6.png", "開門5.png", "開門4.png", "開門3.png", "開門2.png", "開門1-3.png", "開門1-2.png", "開門1-1.png", "象形文字紙捲打開.png", "象形文字紙捲.png", "畫2.jpg", "鳥.png", "陶罐底圖-1.png", "陶罐_斧頭-6.png", "陶罐_斧頭-5.png", "陶罐_斧頭-4.png", "陶罐_斧頭-3.png", "陶罐_斧頭-2.png", "陶罐.png", "陶器碎片-1.png", "閉門-1.png", "閉門.png", "蛇.png", "眼睛.png", "密碼.png", "素材.png", "神像4-器-1.png", "神像4-器.png", "神像4-無.png", "神像4-有.png", "神像3-器-1.png", "神像3-器.png", "神像3-無.png", "神像3-有.png", "神像2-器-1.png", "神像2-器.png", "神像2-無.png", "神像2-有.png", "神像1-器-1.png", "神像1-器.png", "神像1-無.png", "神像1-有.png", "書(闔起).png", "書(開).png", "生命之符-點取位置.png", "火爐小圖.png", "火爐大圖.png", "火把小圖.png", "火把2.png", "火把.png", "木乃伊(開.png", "木乃伊(閉).png", "十字.png", "XX.png", "r2-1mummy.png", "r2-1(有火把)-1光束.png", "r-2.png", "r1-1-1.png", "eye3-黃色路線2.png", "eye1透明路線.png", "587925.png", "998.png", "888.png", "887.png", "886.png", "859.png", "10000.png", "1000.png", "100.png", "10.png", "1.png", "寶箱底圖-1.png", "寶箱底圖.png", "寶箱小圖101.png", "寶箱小圖.png", "寶箱大圖打開.png", "寶箱大圖1.png", "寶箱大圖.png", "寶箱大圖(開).png", "寶石-斜.png", "寶石-正-1.png", "寶石-正.png", "藥水-1.png", "藥水.png", "5555.png", "189.png", "96.png", "5858.png", "5.png", "XXX.mp3", "OOO.mp3", "123.png", "123.gif", "XXX.mp3", "OOO.mp3", "9987.png", "777.png", "555.png", "88.jpg", "XXX.mp3", "OOO.mp3", "1371648876-640563658.png", "777.png", "753.png", "666.gif", "555.png", "88.png", "1 Hour of Ancient Egyptian Music.mp3", "end.png"
 ], function () {
     Game.start();
 });
 var level = 0;
 var sprites = [];
 var time = 0
-setInterval(function(){
+setInterval(function () {
     time++
-},1000)
+}, 1000)
 function level_1() {
     var play = createSprite({
         x: 280,
@@ -132,7 +132,7 @@ function level_1() {
 
 
 function level_2() {
-    setTimeout(function  (){
+    setTimeout(function () {
         setBackdrop("第二關.png");
 
         var text_1 = '';
@@ -1607,7 +1607,7 @@ function level_3() {
             if (Isis_jj2 == 1) {
                 Isis_jj.hidden = false
             }*/
-            if (lolPassed == true) {  
+            if (lolPassed == true) {
                 Isis_jj.hidden = false
             }
             if (ppe2 == 0) {
@@ -1640,7 +1640,7 @@ function level_3() {
             cco.y -= 50
             Isis_jj.hidden = false
             Isis_jj.direction += 90
-			lolPassed = true;
+            lolPassed = true;
         }
         if (mummy.touched(cursor)) {
             mummy_up.x = 320
@@ -1939,127 +1939,129 @@ function level_3() {
             minecraft.x = 400
             minecraft.direction += 90
             minecraft.hidden = false
-	    minecraft.costumeId = 0
+            minecraft.costumeId = 0
         }
         if (edlp = 1) {
-            minecraft.scale = 0.2
-            if (minecraft.costumeId == 0) {
-                minecraft.costumeId = 1
-                ai = 1
-            } else if (minecraft.costumeId == 1) {
-                minecraft.costumeId = 0
-                ai = 0
-            }
+            settimeout(function(){
+                minecraft.scale = 0.2
+                if(minecraft.costumeId == 0) {
+                    minecraft.costumeId = 1
+                    ai = 1
+                } else if (minecraft.costumeId == 1) {
+                    minecraft.costumeId = 0
+                    ai = 0
+                }
+            })
         }
-    });
-    uj.when("click", function () {
-        r.costumeId = 19
-        way2.hidden = true
-        r3s.hidden = true
-        mummy.hidden = true
-        uj_jj.hidden = false
-        ddv.hidden = true
-        eye.hidden = true
-        book.hidden = true
-        ppe.hidden = true
-        XX.hidden = false
-        tt.hidden = true
-        uj.hidden = true
-        r.scale = 0.7
-    });
-    uj_jj.when("click", function () {
-        if (adj == 0) {
-            uj_jj.x = 470
-            uj_jj.y = 50
-            uj_jj.scale = 0.2
-            setTimeout(function () {
-                adj = 1
-            }, 500)
-            uj_jj.hidden = false
-        }
-        if (adj == 1) {
-            xo.hidden = false
-            XX.hidden = false
-        }
-    });
-    xo.when("click", function () {
-        if (ai == 1) {
-            o12 = 1
-            minecraft.x = 455
-            minecraft.y = 130
-            setTimeout(function () {
-                minecraft.costumeId = 2
-                minecraft.scale = 0.5
-            }, 1000)
-            setTimeout(function () {
-                o12 = 1
-                minecraft.destroy()
-                xo.costumeId = 1
-            }, 2000)
-        }
-    });
-    o3o.when("click", function () {
-        r.costumeId = 20
-        r3o.hidden = true
-        jf.hidden = true
-        pot.hidden = true
-        if (ii == 1) {
-            ppot.hidden = true
-        }
-        o3o.hidden = true
-        o3o_jj.hidden = false
-        XX.hidden = false
-        llol.hidden = false
-        llol2.hidden = false
-    });
-    o3o_jj.when("click", function () {
-        if (lll == 1) {
-            o3o.costumeId = 1
-        }
-    });
-    llol.when("click", function () {
-        if (lllooolll <= 8) {
-            lllooolll++
-        } else {
-            lllooolll = 0
-        }
-    });
-    llol2.when("click", function () {
-        if (lllooolll2 <= 8) {
-            lllooolll2++
-        } else {
-            lllooolll2 = 0
-        }
-    });
-    Osiris_jj.when("click", function () {
-        if (oo7 == 0) {
-            Osiris_jj.x = 400
-            Osiris_jj.y = 50
-            Osiris_jj.scale = 0.15
-            oo7 = 1
-        } else {
-            if (Osiris_jj.costumeId == 0) {
-                Osiris_jj.costumeId = 1
-                poq = 1
-            } else if (Osiris_jj.costumeId == 1) {
-                Osiris_jj.costumeId = 0
-                poq = 0
-            }
-        }
-    });
-    Osiris.when("click", function () {
-        if (poq == 1) {
-            Osiris.costumeId = 1
-            Osiris_jj.destroy()
-        }
-    });
-    r.when("click", function () {
-        if (and == 0) {
-            return
-        }
-    });
-}
+    })
 
+};
+uj.when("click", function () {
+    r.costumeId = 19
+    way2.hidden = true
+    r3s.hidden = true
+    mummy.hidden = true
+    uj_jj.hidden = false
+    ddv.hidden = true
+    eye.hidden = true
+    book.hidden = true
+    ppe.hidden = true
+    XX.hidden = false
+    tt.hidden = true
+    uj.hidden = true
+    r.scale = 0.7
+});
+uj_jj.when("click", function () {
+    if (adj == 0) {
+        uj_jj.x = 470
+        uj_jj.y = 50
+        uj_jj.scale = 0.2
+        setTimeout(function () {
+            adj = 1
+        }, 500)
+        uj_jj.hidden = false
+    }
+    if (adj == 1) {
+        xo.hidden = false
+        XX.hidden = false
+    }
+});
+xo.when("click", function () {
+    if (ai == 1) {
+        o12 = 1
+        minecraft.x = 455
+        minecraft.y = 130
+        setTimeout(function () {
+            minecraft.costumeId = 2
+            minecraft.scale = 0.5
+        }, 1000)
+        setTimeout(function () {
+            o12 = 1
+            minecraft.destroy()
+            xo.costumeId = 1
+        }, 2000)
+    }
+});
+o3o.when("click", function () {
+    r.costumeId = 20
+    r3o.hidden = true
+    jf.hidden = true
+    pot.hidden = true
+    if (ii == 1) {
+        ppot.hidden = true
+    }
+    o3o.hidden = true
+    o3o_jj.hidden = false
+    XX.hidden = false
+    llol.hidden = false
+    llol2.hidden = false
+});
+o3o_jj.when("click", function () {
+    if (lll == 1) {
+        o3o.costumeId = 1
+    }
+});
+llol.when("click", function () {
+    if (lllooolll <= 8) {
+        lllooolll++
+    } else {
+        lllooolll = 0
+    }
+});
+llol2.when("click", function () {
+    if (lllooolll2 <= 8) {
+        lllooolll2++
+    } else {
+        lllooolll2 = 0
+    }
+});
+Osiris_jj.when("click", function () {
+    if (oo7 == 0) {
+        Osiris_jj.x = 400
+        Osiris_jj.y = 50
+        Osiris_jj.scale = 0.15
+        oo7 = 1
+    } else {
+        if (Osiris_jj.costumeId == 0) {
+            Osiris_jj.costumeId = 1
+            poq = 1
+        } else if (Osiris_jj.costumeId == 1) {
+            Osiris_jj.costumeId = 0
+            poq = 0
+        }
+    }
+});
+Osiris.when("click", function () {
+    if (poq == 1) {
+        Osiris.costumeId = 1
+        Osiris_jj.destroy()
+    }
+});
+r.when("click", function () {
+    if (and == 0) {
+        return
+    }
+});
 function level_4() {
     setBackdrop("white")
     alert("點擊說謊的神像，答對後你就能逃出密室，若點錯...你將永遠被困在密室")
@@ -2148,10 +2150,10 @@ function level_5() {
             "開門13.png", " 開門14.png", " 開門15.png", " 開門16.png"]
     });
     var playing = createSprite({
-        x:320,
-        y:250,
-        scale:0.8,
-        costumes:["end.png"]
+        x: 320,
+        y: 250,
+        scale: 0.8,
+        costumes: ["end.png"]
     })
     var ppap = 0
     playing.hidden = true
@@ -2162,10 +2164,10 @@ function level_5() {
         playing.hidden = false
         ppap = 1
     });
-    forever(function(){
-        if(ppap == 1){
-            print(time,320,240,60,"black")
-	    stop()
+    forever(function () {
+        if (ppap == 1) {
+            print(time, 320, 240, 60, "black")
+            stop()
         }
     })
 }
