@@ -1940,18 +1940,15 @@ function level_3() {
             minecraft.direction += 90
             minecraft.hidden = false
             minecraft.costumeId = 0
-        }
-        if (edlp = 1) {
-            setTimeout(function () {
-                minecraft.scale = 0.2
-                if (minecraft.costumeId == 0) {
-                    minecraft.costumeId = 1
-                    ai = 1
-                } else if (minecraft.costumeId == 1) {
-                    minecraft.costumeId = 0
-                    ai = 0
-                }
-            },1000)
+        } else if (edlp = 1) {
+               minecraft.scale = 0.2
+               if (minecraft.costumeId == 0) {
+                   minecraft.costumeId = 1
+                   ai = 1
+               } else if (minecraft.costumeId == 1) {
+                   minecraft.costumeId = 0
+                   ai = 0
+               }
         }
     })
     uj.when("click", function () {
