@@ -1940,8 +1940,9 @@ function level_3() {
             minecraft.direction += 90
             minecraft.hidden = false
             minecraft.costumeId = 0
+            minecraft.scale = 0.2
         } else if (edlp = 1) {
-               minecraft.scale = 0.2
+               
                if (minecraft.costumeId == 0) {
                    minecraft.costumeId = 1
                    ai = 1
