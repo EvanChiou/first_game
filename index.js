@@ -2063,7 +2063,7 @@ function level_4() {
     setBackdrop("white")
     alert("點擊說謊的神像，答對後你就能逃出密室，若點錯...你將永遠被困在密室")
     setBackdrop("13.jpg");
-    var Shu = createSprite("神像4-有.png");
+    var Shu = createSprite("555.png");
     Shu.x = 100
     Shu.y = 370
     Shu.hidden = true
@@ -2071,7 +2071,7 @@ function level_4() {
     Osiris.x = 300
     Osiris.y = 370
     Osiris.hidden = true
-    var IsisQ = createSprite("555.png");
+    var IsisQ = createSprite("神像4-有.png");
     IsisQ.x = 500
     IsisQ.y = 370
     var stairs = Math.floor(Math.random() * 4)
