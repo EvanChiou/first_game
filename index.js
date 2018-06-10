@@ -1541,7 +1541,7 @@ function level_3() {
                 ppe.x = 50
                 ppe.y = 50
                 ppe.scale = 0.35
-                ppe5++
+                
             }, 1000);
         }
         if (QQ.touched(cursor) && r.costumeId == 3) {
@@ -1549,6 +1549,7 @@ function level_3() {
             QQ.y = 50
             QQ.scale = 0.3
             QQ2 = 1
+            ppe5++
         } else if (QQ.touched(cursor) && QQ2 == 1) {
             QQget.hidden = false
             XX.hidden = false
