@@ -2165,7 +2165,6 @@ function level_5() {
     forever(function () {
         if (ppap == 1) {
             print(time, 320, 240, 60, "black")
-            stop()
         }
     })
 }
